@@ -1,0 +1,19 @@
+directories:
+  output: dist
+  buildResources: assets
+files:
+  - filter:
+      - build/**/*
+      - build/**/*
+      - main.js
+      - package.json
+      - public/electron.js
+extraMetadata:
+  main: build/electron.js
+appId: com.wondermaps.desktop
+productName: WonderMaps
+win:
+  target: nsis
+  icon: public/wondermaps_logo.ico
+extends: react-cra
+electronVersion: 30.5.1
